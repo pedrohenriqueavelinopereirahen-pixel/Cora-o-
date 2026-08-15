@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surpresa</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff0f5;
+            margin: 0;
+        }
+        .coracao {
+            font-size: 100px;
+            cursor: pointer;
+            color: red;
+            transition: transform 0.3s;
+        }
+        .coracao:hover {
+            transform: scale(1.2);
+        }
+        .imagem {
+            display: none;
+            margin-top: 30px;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="coracao" onclick="mostrarImagem()">❤️</div>
+    <img src="COLOQUE_O_LINK_DA_SUA_IMAGEM_AQUI" class="imagem" id="minhaImagem">
+
+    <script>
+        function mostrarImagem() {
+            document.getElementById('minhaImagem').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
